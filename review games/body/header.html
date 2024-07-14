@@ -1,0 +1,72 @@
+<style>
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; 
+    }
+
+    .nav-item:hover > .nav-link {
+        color: #ffffff; 
+    }
+
+   
+    .dropdown-menu .dropdown-item:hover {
+        background-color: #1d2630; 
+        color: #ffffff; 
+    }
+</style>
+<header class="header-m1">
+    <div class="container d-flex align-items-center justify-content-between p-0">
+        <a class="header-logo img-fluid rounded p-1" href="/review-games/home.html">
+            <img src="https://www.dropbox.com/scl/fi/zlxzyql63p5foifgzoisl/AnyConv.com__gUJIGmhQ.webp?dl=1" alt="logo" height="40px">
+        </a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container p-0">
+                <div class="d-lg-none d-flex w-100 justify-content-center rounded text-white">
+                    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/review-games/home.html">
+                                <i class="fas fa-home"></i> HOME
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="gamesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fab fa-xbox"></i> GAMES
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="gamesDropdown">
+                                <li><a class="dropdown-item" href="/list-game/list-game.html?action=moba">MOBA</a></li>
+                                <li><a class="dropdown-item" href="/list-game/list-game.html?action=br">BATTLE ROYALE</a></li>
+                                <li><a class="dropdown-item" href="/list-game/list-game.html?action=fps">BẮN SÚNG</a></li>
+                                <li><a class="dropdown-item" href="/list-game/list-game.html?action=rpg">RPG</a></li>
+                                <li><a class="dropdown-item" href="/list-game/list-game.html?action=tgm">THẾ GIỚI MỞ</a></li>
+                                <li><a class="dropdown-item" href="/list-game/list-game.html?action=st">SINH TỒN</a></li>
+                                <li><a class="dropdown-item" href="/list-game/list-game.html?action=ct">CHIẾN THUẬT</a></li>
+                                <li><a class="dropdown-item" href="/list-game/list-game.html?action=tt">THỂ THAO</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/news/news.html">
+                                <i class="fas fa-newspaper"></i> TIN TỨC
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/support/support.html">
+                                <i class="fas fa-headset"></i> HỖ TRỢ
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex ms-lg-3 mt-2 mt-lg-0" style="width: 222px;">
+                        <input type="text" class="form-control me-1" id="searchInput" placeholder="Tìm kiếm..." aria-label="Tìm kiếm">
+                        <button class="btn btn-outline-secondary" id="searchButton" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="icon" href="https://www.dropbox.com/scl/fi/zpfcdupbqkmmw1u5yt90k/game-min.png?dl=1" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/game/css_game.css">
+
+</head>
+<body style="background:#1d2630;"> 
+    <div id="header-placeholder"></div>
+
+    <main class="section-gap container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="rounded text-white p-3">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="profile-image">
+                            <img id="profile-img" class="border border-light rounded w-100" alt="Profile Image">
+                        </div>
+                    </div>
+                </div>         
+            </div>
+            <div class="col-md-6">
+                <section id="game__basicInfo" class="text-light p-3">
+                    <div class="game__titleBox mb-3">
+                        <h1 id="game-titleBox"></h1>
+                    </div>
+                    <p class="game__developerBox mb-3">
+                        <span>Phát triển:</span>
+                        <a id="developer"></a>
+                    </p>
+                    <p class="mb-3" id="game-description"></p>
+                    <div id="game__summaryFooter" class="d-flex flex-wrap align-items-center">
+                        <span class="game__shareBox d-flex align-items-center me-3">
+                            <a id="erolabs-discord" href="" target="_blank" class="game__snsBtn" rel="noreferrer noopenner">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                        </span>
+                        <span class="game__tagBox d-flex flex-wrap align-items-center">
+                            <span class="game__tag game__tag--device badge bg-secondary me-2">Trình duyệt</span>
+                        </span>
+                    </div>
+                </section>                
+            </div>
+            <div class="col-md-3">
+                <div id="game__download" class="d-flex flex-wrap justify-content-start gap-3">
+                    
+                    <a href="./forum_board.html?forum_id=13" id="discount-code-link" class="game__downloadBtn game__downloadBtn--forum d-flex align-items-center p-3 bg-light border rounded text-decoration-none">
+                        <div class="game__downloadIcon me-2">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <div class="game__downloadText">
+                            <span data-i18n="common.discount">Mã Giảm Giá</span>
+                        </div>
+                    </a>
+                    <a href="/forum/forum.html?action=1" id="forum-link" class="game__downloadBtn game__downloadBtn--forum d-flex align-items-center p-3 bg-light border rounded text-decoration-none">
+                        <div class="game__downloadText">
+                            <span data-i18n="common.forum">Diễn đàn</span>
+                        </div>
+                    </a>
+                </div>
+                <div id="game-details-container"></div>
+            </div>
+        </div>
+    </main>
+    <div class="section-gap container px-4">
+        <div class="row">
+            <div class="col-md-8">
+                <video id="game-video" class="w-100 h-100" controls autoplay muted playsinline>
+                    <source src="" type="video/mp4"> 
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="col-md-4 p-0">
+                <div class="container text-white border">
+                    <div class="row">
+                        <div class="col">
+                            <h1>Zenless Zone Zero</h1>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col text-uppercase small fw-bold">
+                            Released On: <span class="text-uppercase">Jul 2, 2024</span>
+                        </div>
+                    </div>
+                
+                    <div class="row my-3">
+                        <div class="col">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <span class="text-uppercase text-secondary d-block small">Metascore</span>
+                                    <span class="fw-bold text-dark small">Generally Favorable</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="bg-success text-white fw-bold text-center py-2 px-3">80</div>
+                                </div>
+                            </div>
+                            <div class="progress mb-3" style="height: 10px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 85.71%" aria-valuenow="85.71" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 9.52%" aria-valuenow="9.52" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 4.76%" aria-valuenow="4.76" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <span class="text-uppercase text-secondary d-block small">User Score</span>
+                                    <span class="fw-bold text-dark small">Mixed or Average</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="bg-warning text-white fw-bold text-center py-2 px-3">6.8</div>
+                                </div>
+                            </div>
+                            <div class="progress mb-3" style="height: 10px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 62.03%" aria-valuenow="62.03" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 9.18%" aria-valuenow="9.18" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 28.80%" aria-valuenow="28.80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="mt-3">
+                                <button class="btn btn-secondary btn-sm w-100">Add My Review</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <div class="section-gap container">
+        <div class="row">
+            <div class="col-md-8 px-5">
+                <div class="accordion" id="accordionExample">
+                    <!-- Tổng Quan -->
+                    <div class="accordion-item rounded-3 shadow-sm mb-3">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button rounded-3 shadow-sm collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Tổng Quan
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body" id="overview">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item rounded-3 shadow-sm mb-3">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button rounded-3 shadow-sm collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Cốt Truyện
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body" id="storyline">
+                                <!-- Nội dung của phần Tổng Quan -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gameplay -->
+                    <div class="accordion-item rounded-3 shadow-sm mb-3">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button rounded-3 shadow-sm collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Gameplay
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body" id="gameplay">
+                                <!-- Nội dung của phần Tổng Quan -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Link Tải và Mua Game -->
+                    <div class="accordion-item rounded-3 shadow-sm mb-3">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button rounded-3 shadow-sm collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Reviews
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body" id="reviews">
+                                <!-- Nội dung của phần Tổng Quan -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     
+            <div class="col-md-4">
+                <iframe frameborder="0" src="https://www.ero-labs.com/adIframe/?code=promotion&lang=vi&adType=4&gameId=1&url=https://game.erolabsshare.xyz/app/6c41d296/TenkafuMA_Diablo_s_Harem&type=blog" width="100%"></iframe>
+                <iframe frameborder="0" src="https://www.ero-labs.com/adIframe/?code=promotion&lang=vi&adType=4&gameId=27&url=https://game.erolabsshare.xyz/app/6c41d296/Cherry_Tale&type=blog" width="100%"></iframe>
+                <iframe frameborder="0" src="https://www.ero-labs.com/adIframe/?code=promotion&lang=vi&adType=4&gameId=32&url=https://game.erolabsshare.xyz/app/6c41d296/Ark_Re_Code&type=blog" width="100%"></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/game/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+
+  .accordion-button {
+    background-color: #1d2630; /* Màu nền cho nút accordion */
+    color: #ffffff; 
+  }
+  
+  .accordion-button:not(.collapsed) {
+    color: #000000; /* Màu chữ khi accordion mở */
+    background-color: #ffffff; /* Màu nền khi accordion mở */
+  }
+  
+  .accordion-button::after {
+    filter: invert(0.5); /* Thay đổi màu của biểu tượng mở rộng */
+  }
+  .navbar-nav .nav-item {
+    margin-right: 1.5rem;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  
+  .navbar-nav .nav-item .nav-link .fas,
+  .navbar-nav .nav-item .nav-link .fab {
+    margin-right: 0.5rem;
+  }

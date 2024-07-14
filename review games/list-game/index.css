@@ -1,0 +1,50 @@
+/* Card */
+.card {
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 1.5em;
+  }
+  .navbar-nav .nav-item {
+    margin-right: 1.5rem;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  
+  .navbar-nav .nav-item .nav-link .fas,
+  .navbar-nav .nav-item .nav-link .fab {
+    margin-right: 0.5rem;
+  }
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .carousel-item video {
+    max-height: 500px; 
+    object-fit: cover;
+  }
+  
+  /* Custom Card */
+  .custom-card {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .custom-card-title {
+    font-weight: bold;
+  }
+  
+  .custom-card-img {
+    width: 30%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: calc(0.25rem - 1px);
+  }

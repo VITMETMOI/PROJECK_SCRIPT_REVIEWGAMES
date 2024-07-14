@@ -1,0 +1,26 @@
+.navbar-nav .nav-item {
+    margin-right: 1.5rem;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  
+  .navbar-nav .nav-item .nav-link .fas,
+  .navbar-nav .nav-item .nav-link .fab {
+    margin-right: 0.5rem;
+  }
+  body {
+    background: #1d2630;
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+
+
+
+
